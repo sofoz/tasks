@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3vh;
+    font-style: italic;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+        'header header'
+        'main aside'
+        'footer footer';
+
+}
+
+.header {
+    grid-area: header;
+
+    background-color: bisque;
+}
+
+.sidebar {
+    grid-area: aside;
+
+    background-color: rgb(209, 187, 178);
+}
+
+.content {
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas:
+        'c0 c0'
+        'c1 c2'
+        'c3 c3';
+
+    justify-items: center;
+    background-color: rgb(203, 234, 243);
+
+}
+
+.content_0 {
+    grid-area: c0;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.content_1 {
+    width: 70%;
+    grid-area: c1;
+
+}
+
+.content_2 {
+    width: 70%;
+
+    grid-area: c2;
+
+}
+
+.content_3 {
+    width: 85%;
+    margin-top: 5%;
+    grid-area: c3;
+}
+
+.content_1,
+.content_2,
+.content_3 {
+    background-color: rgb(195, 198, 202);
+}
+
+.footer {
+    grid-area: footer;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(175, 166, 166);
+}
+
+.footer_1 {
+    width: 20%;
+    height: 60%;
+    margin-top: 1%;
+    background-color: beige;
+}
+
+.footer_2 {
+    display: none;
+}
+
+/*======================================*/
+
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 25% 25% 30%;
+        grid-template-areas:
+            'c0'
+            'c1'
+            'c2'
+            'c3';
+    }
+
+    .content_2 {
+        margin-top: 5%;
+    }
+
+    .content_1,
+    .content_2,
+    .content_3 {
+        width: 90%;
+    }
+
+    .footer_1 {
+        display: none;
+    }
+
+    .footer_2 {
+        width: 20px;
+        display: block;
+        margin-top: 5%;
+    }
+}
