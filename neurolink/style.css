@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: Roboto;
+    color: #fff;
+
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 200%;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a {
+    color: #858585;
+}
+
+.footer_rights {
+    color: #858585;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*===================================*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+
+}
+
+.container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+/*===================================*/
+
+/*header*/
+header {
+    grid-area: header;
+    background-image: url(assets/header.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+
+}
+
+.navigation_link {
+    list-style: none;
+    font-size: 13px;
+    line-height: 20px;
+
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.header_links {
+    font-size: 20px;
+    line-height: 24px;
+
+    text-transform: uppercase;
+    padding-top: 10vh;
+}
+
+.header_links_line {
+    padding-bottom: 1%;
+}
+
+.sidebar {
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-between;
+}
+
+/*header*/
+
+/*main*/
+main {
+    grid-area: main;
+}
+
+.section_1 {
+    display: grid;
+    grid-template: 1fr/ repeat(auto-fit, 1fr);
+    min-width: 660px;
+
+}
+
+.block_1,
+.block_2,
+.block_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vh;
+    line-height: 7vh;
+}
+
+.section_2 {
+    background-image: url(assets/section2.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section_2_text {
+    font-size: 6vh;
+}
+
+.section_2_h2 {
+    margin: 0%;
+}
+
+
+.block_1 {
+    grid-area: 2/1;
+    background-color: #C9A3A4;
+    ;
+
+}
+
+.block_2 {
+    grid-area: 2/2;
+    background-color: #A7CEEF;
+
+}
+
+.block_3 {
+    grid-area: 2/3;
+    background-color: #ACB5AC;
+
+}
+
+/*main*/
+
+/*footer*/
+footer {
+    grid-area: footer;
+
+    display: flex;
+    justify-content: space-around
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+}
