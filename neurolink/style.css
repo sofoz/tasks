@@ -99,9 +99,8 @@ main {
 
 .section_1 {
     display: grid;
-    grid-template: 1fr/ repeat(auto-fit, 1fr);
+    grid-template: 1fr/ repeat(auto-fill, 3, 1fr);
     min-width: 660px;
-
 }
 
 .block_1,
