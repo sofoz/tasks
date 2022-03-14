@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.header__img {
+    max-height: 70vh;
+}
+
+.main__column-item {
+    height: 600px;
+}
+
+/*text*/
+.title {
+    font-family: 'Roboto';
+    font-size: 8vh;
+}
+
+.card-title {
+    font-size: 4vh;
+}
+
+.card-text {
+    font-size: 2vh;
+}
+
+.card-title--form {
+    color: white;
+}
+
+/*buttons*/
+.button {
+    background: #5222D0;
+    border-radius: 100px;
+    color: white;
+    padding: 7px 6px;
+    border-radius: 19px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.button--busket {
+    width: 115px;
+    height: 38px;
+}
+
+.button--buy {
+    width: 250px;
+    height: 64px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*background*/
+.main__column--form {
+    background-color: #EC615B;
+    ;
+}
