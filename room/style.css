@@ -8,12 +8,6 @@ body {
     max-width: 100vw;
 }
 
-.partners_logo {}
-
-.partners_logo {}
-
-.partners_logo {}
-
 a {
     text-decoration: none;
     color: black;
@@ -225,13 +219,12 @@ li {
     }
 
     .footer_menu_about {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .footer_about_item,
     .footer_support_item,
     .footer_Showrooms_item {
         display: none;
-
     }
 }
